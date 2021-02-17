@@ -1,21 +1,88 @@
-.base, .thumderstorm, .rainsmall, .rainWsun, .rainWsnow, .rainyRain, .snowing, .misty, .sunshine, .sunshineWclodus, .cloudspartial, .darkclouds {
-  width: 300px;
-  height: 400px;
+@import url(https://fonts.googleapis.com/css2?family=Concert+One&family=Oswald:wght@400;600&display=swap);
+html {
+  height: 100%; }
+
+body {
+  font-family: 'Oswald', sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: max-content;
+  background-image: url(https://image.freepik.com/free-vector/modern-city-skyline-background_77417-791.jpg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+  background-position: center; }
+
+p {
+  margin: 0;
+  padding: 0; }
+
+.container-search {
+  width: 32rem;
+  margin: 10rem auto 0 auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 0.5rem;
+  border: 1px solid lightgray;
+  font-weight: 400;
+  font-size: 2em; }
+
+.container-current__weather {
+  position: relative;
+  width: 32rem;
+  margin: 0 auto 0 auto;
+  padding: 0.5rem 2rem 13.5rem 2rem;
+  border: 1px solid lightgray;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 5rem 6rem;
+  grid-template-areas: '. dataC' '. dataP';
+  text-align: center; }
+  .container-current__weather .country {
+    grid-area: dataC;
+    align-self: flex-end;
+    justify-self: center;
+    font-weight: 400;
+    font-size: 2rem;
+    font-weight: 700; }
+  .container-current__weather .temperature {
+    grid-area: dataP;
+    align-self: flex-start;
+    justify-self: center;
+    font-weight: 600;
+    font-size: 5rem;
+    color: darkslateblue; }
+  .container-current__weather .message-error {
+    font-weight: 600;
+    font-size: 2.4rem;
+    color: darkred;
+    width: inherit; }
+
+.base, .thumderstorm, .rainsmall, .rainWsun, .rainWsnow, .rainyRain, .snowing, .misty, .sunshine, .sunshineWclodus, .cloudspartial, .darkclouds {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
   background-position: center; }
 
 .thumderstorm {
   background-image: url(024b6ff323cd86d9ba21.png); }
 
 .rainsmall {
-  background-image: url(""); }
+  background-image: url(412cb854c92bd2eac126.png); }
 
 .rainWsun {
-  background-image: url(""); }
+  background-image: url(5a7abebfc57554e623d0.png); }
 
 .rainWsnow {
-  background-image: url(""); }
+  background-image: url(bda6ffa4122808f80dfc.png); }
 
 .rainyRain {
   background-image: url(ec0aa25ae2aff8f4ff59.png); }
@@ -24,7 +91,7 @@
   background-image: url(d9e839ae0340f21b7ebf.png); }
 
 .misty {
-  background-image: url(""); }
+  background-image: url(1e5690cf260446a9d829.png); }
 
 .sunshine {
   background-image: url(61a16621af993352d514.png); }
@@ -33,7 +100,7 @@
   background-image: url(8f7786c35419cfca8d58.png); }
 
 .cloudspartial {
-  background-image: url(""); }
+  background-image: url(b6f738fb8a06782286a2.png); }
 
 .darkclouds {
   background-image: url(3ecafa47119de8f6b433.png); }
