@@ -1,3 +1,5 @@
+import classGenerator from "./classGenerator"
+
 const changeUnit = (unit) => {
   if(unit === 'metric') {
     return 'C'
@@ -19,6 +21,8 @@ const displayWeather = (temp, location, country, weather, unit) => {
   pTemp.innerHTML = `Temperature: ${roundedTemp}&deg;${farenCels}`
   pCountry.textContent = `${location}/${country}`
   display.innerHTML = ""
+  console.log(weather)
+  classGenerator(display, parseInt(weather))
   display.append(pCountry)
   display.append(pTemp)
 }
