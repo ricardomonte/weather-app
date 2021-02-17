@@ -1,1 +1,40 @@
+.base, .thumderstorm, .rainsmall, .rainWsun, .rainWsnow, .rainyRain, .snowing, .misty, .sunshine, .sunshineWclodus, .cloudspartial, .darkclouds {
+  width: 300px;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center; }
+
+.thumderstorm {
+  background-image: url(024b6ff323cd86d9ba21.png); }
+
+.rainsmall {
+  background-image: url(""); }
+
+.rainWsun {
+  background-image: url(""); }
+
+.rainWsnow {
+  background-image: url(""); }
+
+.rainyRain {
+  background-image: url(ec0aa25ae2aff8f4ff59.png); }
+
+.snowing {
+  background-image: url(d9e839ae0340f21b7ebf.png); }
+
+.misty {
+  background-image: url(""); }
+
+.sunshine {
+  background-image: url(61a16621af993352d514.png); }
+
+.sunshineWclodus {
+  background-image: url(8f7786c35419cfca8d58.png); }
+
+.cloudspartial {
+  background-image: url(""); }
+
+.darkclouds {
+  background-image: url(3ecafa47119de8f6b433.png); }
 

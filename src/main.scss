@@ -1,0 +1,65 @@
+.base {
+  width: 300px;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.thumderstorm {
+  @extend .base;
+
+  background-image: url("./images/electricstrom.png");
+}
+
+.rainsmall {
+  @extend .base;
+  background-image: url("");
+}
+ 
+.rainWsun {
+  @extend .base;
+  background-image: url("");
+}
+
+.rainWsnow {
+  @extend .base;
+  background-image: url("");
+}
+
+.rainyRain {
+  @extend .base;
+  background-image: url("./images/rain.png");
+}
+
+.snowing {
+  @extend .base;
+  background-image: url("./images/snow.png");
+}
+
+.misty {
+  @extend .base;
+  background-image: url("");
+}
+
+.sunshine {
+  @extend .base;
+  background-image: url("./images/sunny.png");
+
+}
+
+.sunshineWclodus {
+  @extend .base;
+  background-image: url("./images/partialcloud.png");
+}
+
+.cloudspartial {
+  @extend .base;
+  background-image: url("");
+}
+
+
+.darkclouds {
+  @extend .base;
+  background-image: url("./images/clouddark.png");
+}
