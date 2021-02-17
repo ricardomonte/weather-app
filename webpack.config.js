@@ -1,6 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtrarctPlugin = require('mini-css-extract-plugin');
+const Dotenv = require('dotenv-webpack');
 
 module.exports = {
   mode: 'development',
@@ -10,6 +11,7 @@ module.exports = {
     inject: 'body',
   }),
   new MiniCssExtrarctPlugin(),
+  new Dotenv(),
   ],
   output: {
     filename: 'bundle.js',
@@ -31,7 +33,7 @@ module.exports = {
       },
       {
         test: /\.scss$/i,
-        use: [MiniCssExtrarctPlugin.loader, 'css-loader', 'sass-loader'],
+        use: [{ loader: MiniCssExtrarctPlugin.loader, options:{ publicPath: '' }}, 'css-loader', 'sass-loader'],
       },
       {
         test: /\.css$/i,
@@ -44,3 +46,7 @@ module.exports = {
     ],
   },
 };
+
+{
+  publicPath: ''
+}
