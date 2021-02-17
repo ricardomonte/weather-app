@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Oswald:wght@400;600&display=swap');
 
-
 html {
   height: 100%;
 }
@@ -21,7 +20,6 @@ p {
   margin: 0;
   padding: 0;
 }
-
 
 .container-search {
   width: 32rem;
@@ -46,36 +44,40 @@ p {
   display: grid;
   grid-template-columns: 60% 40%;
   grid-template-rows: 5rem 6rem;
-  grid-template-areas: 
-  '. dataC'
-  '. dataP';
+  grid-template-areas:
+    '. dataC'
+    '. dataP';
   text-align: center;
+
+  .base_font {
+    font-weight: 600;
+  }
 
   .country {
     grid-area: dataC;
     align-self: flex-end;
     justify-self: center;
-    font-weight: 400;
     font-size: 2rem;
     font-weight: 700;
   }
-  
+
   .temperature {
+    @extend .base_font;
+
     grid-area: dataP;
     align-self: flex-start;
     justify-self: center;
-    font-weight: 600;
     font-size: 5rem;
     color: darkslateblue;
   }
 
   .message-error {
-    font-weight: 600;
+    @extend .base_font;
+
     font-size: 2.4rem;
     color: darkred;
     width: inherit;
   }
-  
 }
 
 .base {
@@ -90,7 +92,6 @@ p {
   background-position: center;
 }
 
-
 .thumderstorm {
   @extend .base;
 
@@ -99,52 +100,60 @@ p {
 
 .rainsmall {
   @extend .base;
+
   background-image: url("./images/drizzle.png");
 }
- 
+
 .rainWsun {
   @extend .base;
+
   background-image: url("./images/rainwsun.png");
 }
 
 .rainWsnow {
   @extend .base;
+
   background-image: url("./images/rainfreeze.png");
 }
 
 .rainyRain {
   @extend .base;
+
   background-image: url("./images/rain.png");
 }
 
 .snowing {
   @extend .base;
+
   background-image: url("./images/snow.png");
 }
 
 .misty {
   @extend .base;
+
   background-image: url("./images/mist.png");
 }
 
 .sunshine {
   @extend .base;
-  background-image: url("./images/sunny.png");
 
+  background-image: url("./images/sunny.png");
 }
 
 .sunshineWclodus {
   @extend .base;
+
   background-image: url("./images/partialcloud.png");
 }
 
 .cloudspartial {
   @extend .base;
+
   background-image: url("./images/scatclouds.png");
 }
 
-
 .darkclouds {
   @extend .base;
+
   background-image: url("./images/clouddark.png");
 }

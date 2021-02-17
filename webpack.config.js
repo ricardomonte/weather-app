@@ -2,7 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtrarctPlugin = require('mini-css-extract-plugin');
 const Dotenv = require('dotenv-webpack');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin')
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
   mode: 'development',
@@ -22,20 +22,13 @@ module.exports = {
 
   module: {
     rules: [
-      // {
-      //   test: /\.js$/,
-      //   exclude: /node_modules/,
-      //   use: [
-      //     { loader: 'babel-loader' },
-      //   ],
-      // },
       {
         test: /\.html$/i,
         loader: 'html-loader',
       },
       {
         test: /\.scss$/i,
-        use: [{ loader: MiniCssExtrarctPlugin.loader, options:{ publicPath: '' }}, 'css-loader', 'sass-loader'],
+        use: [{ loader: MiniCssExtrarctPlugin.loader, options: { publicPath: '' } }, 'css-loader', 'sass-loader'],
       },
       {
         test: /\.css$/i,
@@ -48,7 +41,3 @@ module.exports = {
     ],
   },
 };
-
-{
-  publicPath: ''
-}

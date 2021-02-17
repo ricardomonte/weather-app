@@ -1,16 +1,13 @@
-import classGenerator from "./classGenerator";
+import classGenerator from './classGenerator';
 
 const changeUnit = (unit) => {
-  if(unit === 'metric') {
+  if (unit === 'metric') {
     return 'C';
-  } else {
-    return 'F';
   }
-}
+  return 'F';
+};
 
-const rounding = (temp) => {
-  return Math.round(temp);
-}
+const rounding = (temp) => Math.round(temp);
 
 const displayWeather = (temp, location, country, weather, unit) => {
   const display = document.querySelector('#current-weather');
@@ -21,14 +18,14 @@ const displayWeather = (temp, location, country, weather, unit) => {
   const farenCels = changeUnit(unit);
   pTemp.innerHTML = `${roundedTemp}&deg;${farenCels}`;
   pCountry.textContent = `${location}/${country}`;
-  pTemp.classList.add("temperature");
-  pCountry.classList.add("country");
-  display.innerHTML = "";
-  classGenerator(contBack, parseInt(weather));
+  pTemp.classList.add('temperature');
+  pCountry.classList.add('country');
+  display.innerHTML = '';
+  classGenerator(contBack, parseInt(weather, 10));
   display.classList.add('container-current__weather');
   display.append(pCountry);
   display.append(pTemp);
   display.append(contBack);
-}
+};
 
-export { displayWeather as default }
+export { displayWeather as default };
