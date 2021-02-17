@@ -41,22 +41,21 @@ p {
   grid-template-rows: 5rem 6rem;
   grid-template-areas: '. dataC' '. dataP';
   text-align: center; }
+  .container-current__weather .base_font, .container-current__weather .temperature, .container-current__weather .message-error {
+    font-weight: 600; }
   .container-current__weather .country {
     grid-area: dataC;
     align-self: flex-end;
     justify-self: center;
-    font-weight: 400;
     font-size: 2rem;
     font-weight: 700; }
   .container-current__weather .temperature {
     grid-area: dataP;
     align-self: flex-start;
     justify-self: center;
-    font-weight: 600;
     font-size: 5rem;
     color: darkslateblue; }
   .container-current__weather .message-error {
-    font-weight: 600;
     font-size: 2.4rem;
     color: darkred;
     width: inherit; }
