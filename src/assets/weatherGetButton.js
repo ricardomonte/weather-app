@@ -1,7 +1,7 @@
 import getWeather from './getWeather';
 
 const weatherGetButton = () => {
-  const btn = document.querySelector('#submite-player-score');
+  const btn = document.querySelector('#values-weather');
   btn.addEventListener('click', () => { 
     const input = document.querySelector('#location-city');
     const units = document.querySelector('#f-or-c');

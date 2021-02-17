@@ -7,15 +7,16 @@
   <title>Weather</title>
 <link href="main.css" rel="stylesheet"></head>
 <body>
-  <h1 id="game-name"></h1>
-  <div id="add-playerS">
-    <input type="text" id="player-score">
+  <div class="container-search">
+    <label for="">Location/city</label>
+    <input type="text" id="location-city">
+    <label for="">Celcius or Farenheits</label>
     <select name="" id="f-or-c">
-      <option value="metric">C</option>
-      <option value="imperial">F</option>
+      <option value="metric">Celcius</option>
+      <option value="imperial">Farenheits</option>
     </select>
-    <button type="button" id="submite-player-score">Save Player Score</button>
+    <button type="button" id="values-weather">Get Weather</button>
   </div>
-  <div id="scores"></div>
+  <div id="current-weather"></div>
 <script defer src="bundle.js"></script></body>
 </html>
