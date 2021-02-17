@@ -1,10 +1,72 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+
+.container-search {
+  width: 32rem;
+  margin: 10rem auto 0 auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 0.5rem;
+  border: 1px solid lightblue; 
+}
+
+.container-current__weather {
+  position: relative;
+  width: 32rem;
+  margin: 0 auto 0 auto;
+  padding: 0.5rem 2rem 13.5rem 2rem;
+  border: 1px solid lightblue;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 5rem 6rem;
+  grid-template-areas: 
+  '. dataC'
+  '. dataP';
+  text-align: center;
+
+  .country {
+    grid-area: dataC;
+    align-self: flex-end;
+    justify-self: center;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  
+  .temperature {
+    grid-area: dataP;
+    align-self: flex-start;
+    justify-self: center;
+    font-size: 5rem;
+    color: darkcyan;
+  }
+  
+}
+
 .base {
-  width: 300px;
-  height: 400px;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
 }
+
 
 .thumderstorm {
   @extend .base;
@@ -14,17 +76,17 @@
 
 .rainsmall {
   @extend .base;
-  background-image: url("");
+  background-image: url("./images/drizzle.png");
 }
  
 .rainWsun {
   @extend .base;
-  background-image: url("");
+  background-image: url("./images/rainwsun.png");
 }
 
 .rainWsnow {
   @extend .base;
-  background-image: url("");
+  background-image: url("./images/rainfreeze.png");
 }
 
 .rainyRain {
@@ -39,7 +101,7 @@
 
 .misty {
   @extend .base;
-  background-image: url("");
+  background-image: url("./images/mist.png");
 }
 
 .sunshine {
@@ -55,7 +117,7 @@
 
 .cloudspartial {
   @extend .base;
-  background-image: url("");
+  background-image: url("./images/scatclouds.png");
 }
 
 
