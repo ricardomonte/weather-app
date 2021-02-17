@@ -12,46 +12,46 @@ const classGenerator = (element, id) => {
   const clouds = [803, 804];
 
   if(thunder.includes(id)) {
-    element.classList.add('thumderstorm')
+    element.classList.add('thumderstorm');
   }
 
   if(drizzle.includes(id)) {
-    element.classList.add('rainsmall')
+    element.classList.add('rainsmall');
   }
    
   if(ligthRain.includes(id)) {
-    element.classList.add('rainWsun')
+    element.classList.add('rainWsun');
   }
 
   if(freezRain.includes(id)) {
-    element.classList.add('rainWsnow')
+    element.classList.add('rainWsnow');
   }
 
   if(rain.includes(id)) {
-    element.classList.add('rainyRain')
+    element.classList.add('rainyRain');
   }
 
   if(snow.includes(id)) {
-    element.classList.add('snowing')
+    element.classList.add('snowing');
   }
 
   if(mist.includes(id)) {
-    element.classList.add('misty')
+    element.classList.add('misty');
   }
   if(clear.includes(id)) {
-    element.classList.add('sunshine')
+    element.classList.add('sunshine');
   }
 
   if(partialClouds.includes(id)) {
-    element.classList.add('sunshineWclodus')
+    element.classList.add('sunshineWclodus');
   }
 
   if(scatClouds.includes(id)) {
-    element.classList.add('cloudspartial')
+    element.classList.add('cloudspartial');
   }
 
   if(clouds.includes(id)) {
-    element.classList.add('darkclouds')
+    element.classList.add('darkclouds');
   }
 }
 

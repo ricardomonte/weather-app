@@ -1,7 +1,7 @@
-import weatherGetButton from './weatherGetButton'
+import weatherGetButton from './weatherGetButton';
 
 const init = () => {
-  weatherGetButton()
+  weatherGetButton();
 }
 
 export { init as default }

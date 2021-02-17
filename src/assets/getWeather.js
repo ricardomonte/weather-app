@@ -1,5 +1,5 @@
 import displayWeather from './displayWeather';
-import errorDisplay from './errorDisplay'
+import errorDisplay from './errorDisplay';
 
 const getWeather = async (location, unit) => {
   try{
@@ -9,11 +9,9 @@ const getWeather = async (location, unit) => {
     const country = result.sys.country;
     const locationName = result.name;
     const tempC = result.main.temp;
-    console.log(weather)
     displayWeather(tempC, locationName, country, weather, unit);
-    console.log(result)
   } catch(err) {
-    errorDisplay()
+    errorDisplay();
   }
 }
 
