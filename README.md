@@ -38,7 +38,7 @@ To get a local copy up and running follow these simple steps:
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues here](https://github.com/ricardomonte/Capstone-Project/issues).
+Feel free to check the [issues here](https://github.com/ricardomonte/weather-app/issues).
 
 ## Show your support
 
