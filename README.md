@@ -24,6 +24,11 @@ To get a local copy up and running follow these simple steps:
 - Go to the main page.
 - Press the "Code" button and get the repo link.
 - Clone it using git command "git clone".
+- Open in terminal the folder just cloned.
+- run in terminal 'npm install'.
+- Create a .env file in the root folder.
+- Add in the .env file your key from openweathermap. Like this: WEATHER_KEY=your-key-goes-here
+- To see locally run 'npm run build'.
 
 ## :bust_in_silhouette: Author
 
