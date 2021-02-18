@@ -3,7 +3,7 @@ import errorDisplay from './errorDisplay';
 
 const getWeather = async (location, unit) => {
   try {
-    const response = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${location}&units=${unit}&appid=${process.env.WEATHER_KEY}`);
+    const response = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${location}&units=${unit}&appid=7c2315507d35c92ae1a4e90c22ae3426`);
     const result = await response.json();
     const weather = result.weather[0].id;
     const { country } = result.sys;
