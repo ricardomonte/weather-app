@@ -12,7 +12,9 @@ module.exports = {
     inject: 'body',
   }),
   new MiniCssExtrarctPlugin(),
-  new Dotenv(),
+  new Dotenv({
+    systemvars: true
+  }),
   new CleanWebpackPlugin(),
   ],
   output: {
