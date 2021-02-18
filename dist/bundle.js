@@ -46,7 +46,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ errorDisplay)\n/* harmony export */ });\nconst errorDisplay = () => {\n  const display = document.querySelector('#current-weather');\n  const pMessage = document.createElement('p');\n  pMessage.textContent = 'Sorry, we could not get the location, please try again';\n  display.classList.add('container-current__weather');\n  pMessage.classList.add('message-error');\n  display.innerHTML = \"\"; \n  display.insertAdjacentElement('beforeend', pMessage);\n};\n\n\n\n//# sourceURL=webpack://weather-app/./src/assets/errorDisplay.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ errorDisplay)\n/* harmony export */ });\nconst errorDisplay = () => {\n  const display = document.querySelector('#current-weather');\n  const pMessage = document.createElement('p');\n  pMessage.textContent = 'Sorry, we could not get the location, please try again';\n  display.classList.add('container-current__weather');\n  pMessage.classList.add('message-error');\n  display.innerHTML = '';\n  display.insertAdjacentElement('beforeend', pMessage);\n};\n\n\n\n//# sourceURL=webpack://weather-app/./src/assets/errorDisplay.js?");
 
 /***/ }),
 
