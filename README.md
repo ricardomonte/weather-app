@@ -15,7 +15,7 @@ For this I use the Openweathermap API.
 
 ##  :red_circle: Live Demo:
 
-[Live demo]()
+[Live demo](https://amazing-golick-931359.netlify.app/)
 
 ##  :construction_worker: Getting Started
 
@@ -24,8 +24,6 @@ To get a local copy up and running follow these simple steps:
 - Go to the main page.
 - Press the "Code" button and get the repo link.
 - Clone it using git command "git clone".
-- Create a new file in root .env
-- In .env file add: WEATHER_KEY='here goes your key from openweathermap'.
 
 ## :bust_in_silhouette: Author
 
