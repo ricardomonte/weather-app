@@ -13,7 +13,7 @@ module.exports = {
   }),
   new MiniCssExtrarctPlugin(),
   new Dotenv({
-    systemvars: true
+    systemvars: true,
   }),
   new CleanWebpackPlugin(),
   ],
