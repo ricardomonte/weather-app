@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Oswald:wght@400;600&display=swap');
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: 'Oswald', sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: max-content;
+  background-image: url(https://image.freepik.com/free-vector/modern-city-skyline-background_77417-791.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.container-search {
+  width: 32rem;
+  margin: 10rem auto 0 auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 0.5rem;
+  border: 1px solid lightgray;
+  font-weight: 400;
+  font-size: 2em;
+}
+
+.container-current__weather {
+  position: relative;
+  width: 32rem;
+  margin: 0 auto 0 auto;
+  padding: 0.5rem 2rem 13.5rem 2rem;
+  border: 1px solid lightgray;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 5rem 6rem;
+  grid-template-areas:
+    '. dataC'
+    '. dataP';
+  text-align: center;
+
+  .base_font {
+    font-weight: 600;
+  }
+
+  .country {
+    grid-area: dataC;
+    align-self: flex-end;
+    justify-self: center;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  .temperature {
+    @extend .base_font;
+
+    grid-area: dataP;
+    align-self: flex-start;
+    justify-self: center;
+    font-size: 5rem;
+    color: darkslateblue;
+    cursor: pointer;
+  }
+
+  .message-error {
+    @extend .base_font;
+
+    font-size: 2.4rem;
+    color: darkred;
+    width: inherit;
+  }
+}
+
+.base {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.thumderstorm {
+  @extend .base;
+
+  background-image: url("./images/electricstrom.png");
+}
+
+.rainsmall {
+  @extend .base;
+
+  background-image: url("./images/drizzle.png");
+}
+
+.rainWsun {
+  @extend .base;
+
+  background-image: url("./images/rainwsun.png");
+}
+
+.rainWsnow {
+  @extend .base;
+
+  background-image: url("./images/rainfreeze.png");
+}
+
+.rainyRain {
+  @extend .base;
+
+  background-image: url("./images/rain.png");
+}
+
+.snowing {
+  @extend .base;
+
+  background-image: url("./images/snow.png");
+}
+
+.misty {
+  @extend .base;
+
+  background-image: url("./images/mist.png");
+}
+
+.sunshine {
+  @extend .base;
+
+  background-image: url("./images/sunny.png");
+}
+
+.sunshineWclodus {
+  @extend .base;
+
+  background-image: url("./images/partialcloud.png");
+}
+
+.cloudspartial {
+  @extend .base;
+
+  background-image: url("./images/scatclouds.png");
+}
+
+.darkclouds {
+  @extend .base;
+
+  background-image: url("./images/clouddark.png");
+}
